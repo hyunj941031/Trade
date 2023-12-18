@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    <head>
+        <title>Strategy: {{ returns }}</title>  <!-- ① --> 
+        <link rel="stylesheet" href="{% static 'strategy/b_style.css' %}"/>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>평균 수익률</th>
+                <th>{{ returns }}</th>  <!-- ③ -->
+            </tr>
+        </table>
+    </body>
+</html>
